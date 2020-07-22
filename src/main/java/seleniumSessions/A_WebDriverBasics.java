@@ -3,7 +3,7 @@ package seleniumSessions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WebDriverBasics {
+public class A_WebDriverBasics {
 	/*
 	 * @author seanak
 	 * In comments you can see Manual testing Points but after Authentication manual testing covert to Automation Testing 
