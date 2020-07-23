@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class A_WebDriverBasics {
 	/*
 	 * @author seanak
-	 * In comments you can see Manual testing Points but after Authentication manual testing covert to Automation Testing 
+	 * In comments you can see Manual testing Points but after authentication manual testing convert in to Automation Testing 
 	 * Goal of Automation tester is to provide validation points to normal manual testing and catch errors 
 	 */
 
