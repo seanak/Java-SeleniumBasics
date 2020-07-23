@@ -19,7 +19,8 @@ public class F_WindowPopUpHandles {
 		
 		driver.findElement(By.linkText("Good PopUp #1")).click();
 		
-		Set<String> Handles =driver.getWindowHandles();
+		Set<String> Handles =driver.getWindowHandles(); 
+		//set is not order based not store value on indexing so you have to iterator and guide it to whatever order you want.
 		
 		Iterator<String> it = Handles.iterator();
 		
