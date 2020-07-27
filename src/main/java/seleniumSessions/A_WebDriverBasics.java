@@ -4,11 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class A_WebDriverBasics {
-	/*
+	/**
 	 * @author seanak
 	 * In comments you can see Manual testing Points but after authentication manual testing convert in to Automation Testing 
 	 * Goal of Automation tester is to provide validation points to normal manual testing and catch errors 
 	 */
+	
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:/chromeDriver/chromedriver_win32/chromedriver.exe");

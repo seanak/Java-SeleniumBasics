@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Ga_WithAttributeGetValueFromTextField {
+	//<input type= "text" this tag is obligatory to get value from text field
 
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
