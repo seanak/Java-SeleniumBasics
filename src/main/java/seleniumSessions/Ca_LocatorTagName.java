@@ -13,15 +13,11 @@ public class Ca_LocatorTagName {
 
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
-		
 		WebDriver driver = new ChromeDriver();
 	
 		driver.get("http://amazon.de");
-	
 		List<WebElement> linkList = driver.findElements(By.tagName("a"));
-	
 		int totalLinks = linkList.size();
-		
 		System.out.println("total links on the page "+ totalLinks);
 	
 		for(int i=0; i<totalLinks; i++){

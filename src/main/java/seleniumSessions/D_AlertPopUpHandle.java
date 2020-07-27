@@ -10,13 +10,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class D_AlertPopUpHandle {
 
 	public static void main(String[] args) throws InterruptedException {
-		
 		WebDriverManager.chromedriver().setup();
-		
 		WebDriver driver= new ChromeDriver();
 		
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
-		
 		driver.findElement(By.id("login1")).sendKeys("test123");
 		Thread.sleep(5000);
 		driver.findElement(By.className("signinbtn")).click();
