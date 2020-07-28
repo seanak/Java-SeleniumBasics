@@ -24,34 +24,17 @@ public class J_DropDownWithoutSelectClass {
 		
 		String option = "/option";
 		
-		getOptionsWithoutSelect(daySelXpath, driver);
-		getOptionsWithoutSelect(monthSelXpath,driver);
-		getOptionsWithoutSelect(yearSelXpath,driver);
-		
 		slectDropDownValueWithoutSelect(driver, "3", daySelXpath,option);
 		slectDropDownValueWithoutSelect(driver, "Sep",monthSelXpath,option);
 		slectDropDownValueWithoutSelect(driver, "1992", yearSelXpath,option);
 		
-		//driver.quit();
+		getOptionsWithoutSelect(daySelXpath, driver);
+		getOptionsWithoutSelect(monthSelXpath,driver);
+		getOptionsWithoutSelect(yearSelXpath,driver);
+		
+		
+		driver.quit();
 		 
-	}
-	
-	/**
-	 * This method is use for getting all value from drop down option without select class
-	 * @param listWE
-	 */
-	
-	public static void getOptionsWithoutSelect(String xpath, WebDriver driver){
-		List<WebElement> dayOptions = driver.findElements(By.xpath(xpath));
-		int listSize = dayOptions.size();
-		
-		for(int i=0;i<listSize;i++){
-			String text = dayOptions.get(i).getText();
-			
-			System.out.println(text);
-			System.out.println("======================");
-		}
-		
 	}
 	
 	/**
@@ -79,7 +62,26 @@ public class J_DropDownWithoutSelectClass {
 	
 		}
 		System.out.println("============");
-	}	
+	}
+	
+	
+	/**
+	 * This method is use for getting all value from drop down option without select class
+	 * @param listWE
+	 */
+	
+	public static void getOptionsWithoutSelect(String xpath, WebDriver driver){
+		List<WebElement> listOptions = driver.findElements(By.xpath(xpath));
+		int listSize = listOptions.size();
+		
+		for(int i=0;i<listSize;i++){
+			String text = listOptions.get(i).getText();
+			
+			System.out.println(text);
+			System.out.println("======================");
+		}
+		
+	}
 	
 }
 
